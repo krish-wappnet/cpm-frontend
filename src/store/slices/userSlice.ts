@@ -28,9 +28,11 @@ interface CreateUserDto {
   email: string;
   firstName: string;
   lastName: string;
-  role: string;
+  roles: string[];
   departmentId?: string;
   password: string;
+  position?: string;
+  department?: string;
 }
 
 type UpdateUserDto = Partial<Omit<CreateUserDto, 'password'>>;

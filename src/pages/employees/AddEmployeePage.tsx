@@ -62,7 +62,7 @@ const AddEmployeePage: React.FC = () => {
     confirmPassword: string;
     role: string;
     position: string;
-    department?: string; // Make department optional in the form
+    department?: string;
   }
 
   const onFinish = async (values: EmployeeFormValues) => {
@@ -74,7 +74,7 @@ const AddEmployeePage: React.FC = () => {
         lastName: string;
         email: string;
         password: string;
-        role: string;
+        roles: string[];
         position: string;
         department?: string;
       } = {
@@ -82,7 +82,7 @@ const AddEmployeePage: React.FC = () => {
         lastName: values.lastName,
         email: values.email,
         password: values.password,
-        role: values.role,
+        roles: [values.role.toLowerCase()],
         position: values.position,
       };
 
