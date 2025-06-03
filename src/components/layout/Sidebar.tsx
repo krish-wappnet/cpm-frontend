@@ -83,7 +83,7 @@ const navItems: NavItem[] = [
         title: "All OKRs",
         path: "/okrs",
         icon: OkrIcon,
-        roles: ["admin", "manager", "employee"],
+        roles: ["admin", "manager"],
       },
       {
         title: "Analytics",
@@ -97,7 +97,7 @@ const navItems: NavItem[] = [
     title: "KPIs",
     path: "/kpis",
     icon: Target,
-    roles: ["admin", "manager", "employee"],
+    roles: ["admin", "manager"],
     children: [
       {
         title: "All KPIs",
