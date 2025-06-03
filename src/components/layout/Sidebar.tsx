@@ -97,13 +97,13 @@ const navItems: NavItem[] = [
     title: "KPIs",
     path: "/kpis",
     icon: Target,
-    roles: ["admin", "manager"],
+    roles: ["admin", "manager","employee"],
     children: [
       {
         title: "All KPIs",
         path: "/kpis",
         icon: Target,
-        roles: ["admin", "manager", "employee"],
+        roles: ["admin", "manager"],
       },
       {
         title: 'KPI Analytics',
